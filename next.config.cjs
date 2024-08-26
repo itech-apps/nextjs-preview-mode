@@ -13,4 +13,9 @@ module.exports = {
       { source: '/r/:snapshotId', destination: '/api/share/:snapshotId' },
     ];
   },
+  resolve: {
+    fallback: {
+      "net": false,
+    }
+  }
 };
