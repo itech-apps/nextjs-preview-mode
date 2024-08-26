@@ -403,8 +403,8 @@ async function scrapeData() {
             console.log(result);
 
             var encodedString = Buffer.from(result).toString('base64');
-          
-            var encodedStringSecond = Base64.encode(encodedString);
+
+            var encodedStringSecond = Buffer.from(encodedString).toString('base64');
 
             //document.write(encodedString);
             //console.log(encodedString);
